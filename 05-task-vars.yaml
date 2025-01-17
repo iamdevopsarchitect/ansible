@@ -11,7 +11,7 @@
 
   - name: print the information again
     vars: #task level variables overrides play level
-      COURSE: "Ansible"
+      Designation: "Ansible"
     ansible.builtin.debug:
       msg: "Hi, I am {{Designation}}, Prepared time: {{Prepared}}, Location is: {{Location}}"
     
