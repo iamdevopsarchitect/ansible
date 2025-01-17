@@ -3,4 +3,4 @@
   tasks:
   - name: print the information
     ansible.builtin.debug:
-      msg:  "Hi, I am Hybrid Cloud DevSecOps Associate Architect, Prepared time: 120hrs, Trainer: sivakumar"
+      msg:  "Hi, I am Hybrid Cloud DevSecOps Associate Architect, Prepared time: 30 Days, Location: Bangalore"
