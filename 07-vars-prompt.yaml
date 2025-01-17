@@ -3,6 +3,7 @@
   vars_prompt:
   - name: Designation
     prompt: please enter your designation
+    private:  false # not confidential
   - name: Prepared
     prompt: Please enter the prepared time
   - name: Location
