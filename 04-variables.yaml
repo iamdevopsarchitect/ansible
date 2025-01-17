@@ -1,0 +1,6 @@
+- name: variables to print
+  hosts: web
+  tasks:
+  - name: print the information
+    ansible.builtin.debug:
+      msg:  "Hi, I am Hybrid Cloud DevSecOps Associate Architect, Prepared time: 120hrs, Trainer: sivakumar"
