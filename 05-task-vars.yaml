@@ -17,4 +17,4 @@
     
   - name: print the information again and again
     ansible.builtin.debug:
-    msg: "Hi, I am {{Designation}}, Prepared time: {{Prepared}}, Location is: {{Location}}"
+      msg: "Hi, I am {{Designation}}, Prepared time: {{Prepared}}, Location is: {{Location}}"
