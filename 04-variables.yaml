@@ -1,6 +1,10 @@
 - name: variables to print
   hosts: web
+  vars:
+    Designation:  "Hybrid Cloud DevSecOps Associate Architect"
+    Prepared: "30 Days"
+    Location: "Bengalore"
   tasks:
   - name: print the information
     ansible.builtin.debug:
-      msg:  "Hi, I am Hybrid Cloud DevSecOps Associate Architect, Prepared time: 30 Days, Location: Bangalore"
+      msg:  "Hi, I am {{Designation}}, Prepared time: {{Prepared}}, Location is: {{Location}}"
