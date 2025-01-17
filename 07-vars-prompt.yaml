@@ -1,0 +1,13 @@
+- name: variables from prompt
+  hosts:  web
+  vars_prompt:
+  - name: Designation
+    prompt: please enter your designation
+  - name: Prepared
+    prompt: Please enter the prepared time
+  - name: Location
+    prompt: Please enter the place
+  tasks:
+  - name: print the Kranthi Details
+    ansible.builtin.debug:
+      msg:  "Hi, I am {{Designation}}, Prepared time: {{Prepared}}, Location is: {{Location}}" 
