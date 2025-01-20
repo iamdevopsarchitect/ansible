@@ -11,7 +11,7 @@
   tasks:
   - name: print the information
     vars:
-      designation:  "Hybrid Cloud DevSecOps  task level"
+      Designation: "Hybrid Cloud DevSecOps  task level"
       Duration: 30 Days
       Location: "Bangalore"
     ansible.builtin.debug:
