@@ -9,7 +9,7 @@
     - Ansible
     - Terraform
     - AWS
-    -K8S
+    - K8S
     live: true #boolean
     tools: #map / dictionary
       ci: jenkins
