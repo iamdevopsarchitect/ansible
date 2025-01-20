@@ -3,7 +3,7 @@
   connection: local # now the server will not search for the user name and password
   vars:
     course: "DevOps with siva"
-    Duration: 120 days
+    Prepared: 120 days
     topics:
     - Linux
     - shell
@@ -22,4 +22,4 @@
   tasks: 
   - name: print the course information
     ansible.builtin.debug:
-      msg:  "Hi I am learning {{ course }} with duation: {{ duration }}, topics are: {{ topics }}, and live: {{ live }}, tools are: {{ tools }}"
+      msg:  "Hi I am learning {{ course }} with duation: {{ Prepared }}, topics are: {{ topics }}, and live: {{ live }}, tools are: {{ tools }}"
