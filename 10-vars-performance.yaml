@@ -1,0 +1,18 @@
+- name: variables to print
+  hosts:  web
+  vars:
+    Designation:  "DevOps Engineer from play level"
+    Preparation:  "30 Days"
+    Location: "Bangalore"
+  vars_prompt:
+  - name: Designation
+    prompt: Please enter the Designation name
+    private:  false # not confidential
+  taksk:
+  - name: print the information
+  vars:
+    designation:  "Hybrid Cloud DevSecOps  task level"
+    Duration: 30 Days
+    Location: "Bangalore"
+    ansible.builtin.debug:
+      msg:  "Hi i am {{ Designation }}"
