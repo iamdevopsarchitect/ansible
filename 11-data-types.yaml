@@ -1,5 +1,6 @@
 - name: devops ourse information
   hosts:  local
+  connection: local # now the server will not search for the user name and password
   vars:
     course: "DevOps with siva"
     Duration: 120 days
