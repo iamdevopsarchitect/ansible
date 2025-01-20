@@ -1,6 +1,6 @@
 - name: gathering the facts
   hosts:  web
-  bcome: yes
+  become: yes
   tasks:
   - name: print the facts
     ansible.builtin.debug:
