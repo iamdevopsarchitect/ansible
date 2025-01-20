@@ -1,9 +1,9 @@
 - name: variables to print
   hosts:  web
-  vars:
-    Designation:  "DevOps Engineer from play level"
-    Preparation:  "30 Days"
-    Location: "Bangalore"
+  # vars:
+  #   Designation:  "DevOps Engineer from play level"
+  #   Preparation:  "30 Days"
+  #   Location: "Bangalore"
   # vars_files:
   # - vars.yaml
   # vars_prompt:
