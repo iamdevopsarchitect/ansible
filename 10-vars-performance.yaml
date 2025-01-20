@@ -15,4 +15,4 @@
     Duration: 30 Days
     Location: "Bangalore"
   ansible.builtin.debug:
-      msg:  "Hi i am {{ Designation }}"
+    msg:  "Hi i am {{ Designation }}"
