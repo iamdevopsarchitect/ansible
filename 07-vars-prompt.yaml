@@ -3,11 +3,13 @@
   vars_prompt:
   - name: Designation
     prompt: please enter your designation
-    private:  false # not confidential
+    private: false # not confidential
   - name: Prepared
     prompt: Please enter the prepared time
+    private: false # not confidential
   - name: Location
     prompt: Please enter the place
+    private: false # not confidential
   tasks:
   - name: print the Kranthi Details
     ansible.builtin.debug:
