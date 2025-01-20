@@ -12,5 +12,5 @@
       msg:  "USER info: {{ USER }}"
 
   - name: create user
-    asible.builtin.command:
+    asible.builtin.command: useradd expense
     when: USER.rc != 0
