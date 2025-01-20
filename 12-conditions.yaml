@@ -1,10 +1,10 @@
 - name: check a number is less than 10 or not
   hosts:  web
   connection: local
-  vars_prompt:
-  - name: my_number
-  prompt: please enter the number
-  private:  false
+  # vars_prompt:
+  # - name: my_number
+  #   prompt: please enter the number
+  #   private:  false       
   vars:
     my_number:  139 # number
   tasks:
