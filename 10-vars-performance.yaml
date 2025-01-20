@@ -4,6 +4,8 @@
     Designation:  "DevOps Engineer from play level"
     Preparation:  "30 Days"
     Location: "Bangalore"
+  vars_files:
+  - vars.yaml
   vars_prompt:
   - name: Designation
     prompt: Please enter the Designation name
@@ -16,3 +18,7 @@
       Location: "Bangalore"
     ansible.builtin.debug:
       msg:  "Hi i am {{ Designation }}"
+
+#1. command line/ args
+#2. Task level
+#3. 
