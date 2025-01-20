@@ -6,10 +6,10 @@
     Location: "Bangalore"
   # vars_files:
   # - vars.yaml
-  vars_prompt:
-  - name: Designation
-    prompt: Please enter the Designation name
-    private:  false # not confidential
+  # vars_prompt:
+  # - name: Designation
+  #   prompt: Please enter the Designation name
+  #   private:  false # not confidential
   tasks:
   - name: print the information
     vars:
