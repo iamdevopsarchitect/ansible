@@ -14,5 +14,5 @@
     designation:  "Hybrid Cloud DevSecOps  task level"
     Duration: 30 Days
     Location: "Bangalore"
-    ansible.builtin.debug:
+  ansible.builtin.debug:
       msg:  "Hi i am {{ Designation }}"
