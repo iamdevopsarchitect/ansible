@@ -29,3 +29,22 @@
       numbers:  [1,2,3,4,4,3,2,1,45,54,54,45]
     ansible.builtin.debug:
       msg:  " Min: {{ numbers | min }}, Max: {{ numbers | max }} "
+
+  - name: convert map to list
+    vars:
+      course:
+        name: "DevOps with AWS"
+        duration: 30 days
+        rainer: "sivakumar"
+    ansible.builtin.debug:
+      msg:  "{{ course | dict2items }}"
+  
+  - name: convert list to map
+    vars:
+      course:
+      - { "key": "name", "value",: "DevOps with AWS"}
+      - { "key": "duration", "value",: "30 days"}
+      - { "key": "trainer", "value",: "sivakumar"}
+    ansible.builtin.debug:
+      msg:  "{{ course | item2dict }}"
+      
