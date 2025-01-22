@@ -1,6 +1,8 @@
 - name: create ec2 and r53 records
   hosts:  local
   connection: local
+  # assignment
+  # move this to vars_files
   vars:
     subnet_id:  subnet-060cc63487d97ba1a
     sg_id:  sg-0f1379bc31d6280f4
@@ -11,6 +13,12 @@
     - frontend
     zone: advik.fun
   tasks:
+  - name: ansible to install boto3 and botocore
+    ansible.builtin.pip:
+      name:
+      - boto3
+      - botocore
+      executable: pip3.9
   - name: create ec2 instance
     amazon.aws.ec2_instance:
       name: "{{ item }}"
